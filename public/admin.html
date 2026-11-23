@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f4ec">
+  <title>Administrar mascotas | Huellas de Hogar</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/admin.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="Huellas de Hogar, inicio"><span class="brand-mark" aria-hidden="true">✿</span><span>Huellas de Hogar</span></a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="nav-link" href="/">Catálogo</a>
+        <a class="nav-link active" href="/admin.html" aria-current="page">Administrar mascotas</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="page-shell admin-page">
+    <section class="admin-intro"><div><span class="eyebrow">Panel de gestión</span><h1>Cuidemos cada perfil.</h1><p>Registra y actualiza la información de las mascotas del catálogo.</p></div><a class="button button-outline" href="/">Ver catálogo ↗</a></section>
+    <p id="admin-message" class="feedback" role="status" aria-live="polite"></p>
+    <div class="admin-layout">
+      <section class="panel list-panel" aria-labelledby="list-title">
+        <div class="panel-header"><div><span class="eyebrow">Registros</span><h2 id="list-title">Mascotas registradas</h2><p id="list-count" class="muted">Cargando mascotas…</p></div><button id="new-pet" class="button button-primary" type="button">+ Nueva mascota</button></div>
+        <label class="search-field admin-search">Buscar mascota<input id="admin-search" type="search" placeholder="Nombre, raza o ubicación" autocomplete="off"></label>
+        <div id="pet-list" class="admin-list" aria-live="polite"></div>
+        <p id="list-empty" class="empty-list" hidden>No hay mascotas para mostrar.</p>
+      </section>
+      <section id="form-panel" class="panel editor-panel" aria-labelledby="form-title">
+        <div class="panel-header"><div><span class="eyebrow">Ficha</span><h2 id="form-title">Nueva mascota</h2><p id="form-subtitle" class="muted">Completa los datos para crear un perfil.</p></div></div>
+        <form id="pet-form">
+          <div class="form-grid">
+            <label class="field full-width">Nombre <span aria-hidden="true">*</span><input name="nombre" type="text" maxlength="120" required placeholder="Ej. Luna"></label>
+            <label class="field">Especie <span aria-hidden="true">*</span><select name="especie" required><option value="">Selecciona</option><option>Perro</option><option>Gato</option><option>Otro</option></select></label>
+            <label class="field">Raza <span aria-hidden="true">*</span><input name="raza" type="text" maxlength="120" required placeholder="Ej. Mestizo"></label>
+            <label class="field">Edad en meses <span aria-hidden="true">*</span><input name="edadMeses" type="number" min="0" step="1" required placeholder="Ej. 18"></label>
+            <label class="field">Tamaño <span aria-hidden="true">*</span><select name="tamano" required><option value="">Selecciona</option><option>Pequeño</option><option>Mediano</option><option>Grande</option></select></label>
+            <label class="field">Ubicación <span aria-hidden="true">*</span><input name="ubicacion" type="text" maxlength="120" required placeholder="Ciudad o zona"></label>
+            <label class="field">Estado <span aria-hidden="true">*</span><select name="estado" required><option>Disponible</option><option>En proceso</option><option>Adoptada</option></select></label>
+            <label class="field full-width">Descripción <span aria-hidden="true">*</span><textarea name="descripcion" rows="4" maxlength="1000" required placeholder="Cuenta cómo es esta mascota"></textarea></label>
+          </div>
+          <div class="upload-block"><span class="field-label">Foto de la mascota</span><label class="upload-zone" for="pet-image"><span id="image-preview" class="image-preview" aria-hidden="true">✿</span><span class="upload-copy"><strong>Seleccionar foto</strong><small>JPG, PNG o WEBP · hasta 5 MB</small></span></label><input id="pet-image" name="imagen" class="sr-only focus-file" type="file" accept="image/jpeg,image/png,image/webp"><button id="remove-image" class="text-button" type="button" hidden>Quitar foto actual</button></div>
+          <div class="form-actions"><button id="submit-pet" class="button button-primary" type="submit">Guardar mascota</button><button id="cancel-edit" class="button button-outline" type="button" hidden>Cancelar edición</button></div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><span>Huellas de Hogar <span aria-hidden="true">✿</span></span><span>Panel de administración</span></footer>
+</body>
+</html>

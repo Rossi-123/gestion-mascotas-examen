@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f4ec">
+  <title>Huellas de Hogar | Catálogo de mascotas</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/catalogo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="Huellas de Hogar, inicio"><span class="brand-mark" aria-hidden="true">✿</span><span>Huellas de Hogar</span></a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="nav-link active" href="/" aria-current="page">Catálogo</a>
+        <a class="nav-link" href="/admin.html">Administrar mascotas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero page-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow">Un lugar para conocer nuevas historias</span>
+        <h1 id="hero-title">Cada huella merece <em>un hogar.</em></h1>
+        <p>Conoce a las mascotas registradas para adopción. Explora sus perfiles y encuentra información clara sobre cada una.</p>
+        <a class="button button-primary" href="#catalogo">Conocer mascotas <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><img src="/assets/companeros.svg" alt=""></div>
+      <div class="hero-note" aria-hidden="true"><span>✦</span> Pequeñas historias,<br>grandes encuentros.</div>
+    </section>
+
+    <section id="catalogo" class="catalog-section page-shell" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div><span class="eyebrow">Conócelos</span><h2 id="catalog-title">Mascotas del catálogo</h2><p id="catalog-count" class="muted">Cargando mascotas…</p></div>
+        <div class="section-accent" aria-hidden="true">✳</div>
+      </div>
+      <div class="filters-panel">
+        <label class="search-field">Buscar por nombre, raza o ubicación
+          <input id="catalog-search" type="search" placeholder="Ej. Luna, mestizo, Bogotá" autocomplete="off">
+        </label>
+        <label class="select-field">Especie
+          <select id="species-filter"><option value="">Todas las especies</option><option>Perro</option><option>Gato</option><option>Otro</option></select>
+        </label>
+        <label class="select-field">Estado
+          <select id="status-filter"><option value="">Todos los estados</option><option>Disponible</option><option>En proceso</option><option>Adoptada</option></select>
+        </label>
+      </div>
+      <p id="catalog-message" class="feedback" role="status" aria-live="polite"></p>
+      <div id="catalog-grid" class="pet-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title">
+    <button id="close-detail" class="dialog-close" type="button" aria-label="Cerrar detalles">×</button>
+    <div id="detail-content"></div>
+  </dialog>
+  <footer class="site-footer"><span>Huellas de Hogar <span aria-hidden="true">✿</span></span><span>Información de mascotas en adopción</span></footer>
+</body>
+</html>

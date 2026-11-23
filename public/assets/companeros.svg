@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 510" role="img" aria-label="Ilustración de un perro y un gato">
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f8dfc6"/><stop offset="1" stop-color="#e9b99d"/></linearGradient></defs>
+  <circle cx="325" cy="260" r="225" fill="url(#bg)"/>
+  <circle cx="520" cy="89" r="24" fill="#f2ad86"/><circle cx="86" cy="338" r="14" fill="#f2ad86"/>
+  <path d="M154 414c36-101 117-139 171-105 66-74 168-49 195 105" fill="#69866f"/>
+  <path d="M166 277c-24-32-21-88-4-118 24 4 45 21 58 39 52-26 104-25 145 3 15-24 41-42 64-46 16 41 10 87-9 121-4 77-65 132-128 132-67 0-123-54-126-131Z" fill="#c98b5e"/>
+  <path d="M163 159c-13 32-10 75 5 100l48-57c-15-22-33-37-53-43Zm266-4c14 33 9 75-9 105l-47-57c16-25 34-42 56-48Z" fill="#9b644b"/>
+  <ellipse cx="284" cy="312" rx="85" ry="69" fill="#eec5a6"/>
+  <ellipse cx="254" cy="274" rx="7" ry="10" fill="#3a3b31"/><ellipse cx="335" cy="274" rx="7" ry="10" fill="#3a3b31"/>
+  <path d="M281 305q13-13 27 0-13 20-27 0Z" fill="#493b36"/><path d="M294 317q-12 23-33 12m33-12q13 23 34 12" fill="none" stroke="#493b36" stroke-width="5" stroke-linecap="round"/>
+  <path d="M416 342 441 272l35 28 32-30 24 73c13 43-13 78-58 81-46 3-72-36-58-82Z" fill="#fbf4e8"/>
+  <path d="m441 272 7 40-25-5m85-37-9 42 24-5" fill="#e5d6bf"/>
+  <ellipse cx="447" cy="350" rx="5" ry="8" fill="#3a3b31"/><ellipse cx="497" cy="350" rx="5" ry="8" fill="#3a3b31"/>
+  <path d="m466 369 8 7 8-7Z" fill="#c98b8b"/><path d="M474 376q-9 15-22 7m22-7q9 15 22 7" fill="none" stroke="#66544d" stroke-width="3" stroke-linecap="round"/>
+  <path d="M438 375h-33m33 8h-30m95-8h33m-33 8h31" stroke="#a48c7c" stroke-width="2" stroke-linecap="round"/>
+  <path d="M177 425h345" stroke="#405e4a" stroke-width="15" stroke-linecap="round"/>
+</svg>
